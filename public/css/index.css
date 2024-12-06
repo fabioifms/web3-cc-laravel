@@ -1,0 +1,99 @@
+.logo{
+    width: 500px;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Barlow', sans-serif;
+}
+main{
+    height: 100vh;
+}
+
+.container-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-texto-banner{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-banner h1,p{
+    color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+.container-livros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-livros-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-livros-titulo h3{
+    font-size: 32px;
+    color: #EBC181;
+    text-align: center;
+    margin: 15px 0px 5px;
+}
+
+.container-bibliografia{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #EBC181 2px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.container-livro img{
+    /*width: 350px;*/
+    padding-top: 5px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.container-livro p{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container-livro p:nth-child(4){
+    color: #9B8357;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-livro p:nth-child(2){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ornaments{
+    width: 200px;
+}
+
