@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    @yield('css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="img/icone.jpg" type="image/x-icon">
@@ -18,12 +18,14 @@
     <main>
         <section class="container-banner">
             <div class="container-texto-banner">
-                <img src="img/banner-negritude.jpg" class="logo" alt="logo-negritude">
+                <img src="{{ asset('img/banner-negritude.jpg') }}" class="logo" alt="logo-negritude">
             </div>
         </section>
        
         {{ $slot }}
 
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js" integrity="sha512-Rdk63VC+1UYzGSgd3u2iadi0joUrcwX0IWp2rTh6KXFoAmgOjRS99Vynz1lJPT8dLjvo6JZOqpAHJyfCEZ5KoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

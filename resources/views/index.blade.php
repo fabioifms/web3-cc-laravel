@@ -1,3 +1,7 @@
+@section('css')
+    <link rel="stylesheet" href="css/index.css">
+@endsection
+
 <x-layout titulo="Bibliografia - Negritude">
 
         <h2>Negritude na música de Chico César e os contrapontos com a Indústria Cultural</h2>
