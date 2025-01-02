@@ -15,11 +15,11 @@
                 @foreach ($bibliografia as $livro)
                 <div class="container-livro">
                     <div class="container-foto">
-                        <img src="{{ $livro['imagem'] }}">
+                        <img src="{{ $livro->imagem }}">
                     </div>
-                    <p>{{ $livro['titulo'] }}</p>
-                    <p>{{ $livro['descrição'] }}</p>
-                    <p>{{ $livro['autor'] }}</p>
+                    <p>{{ $livro->titulo }}</p>
+                    <p>{{ $livro->descricao }}</p>
+                    <p>{{ $livro->autor }}</p>
                 </div>
                 @endforeach
             </div>
