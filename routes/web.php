@@ -13,4 +13,4 @@ Route::get('/bibliografia', [BibliografiaController::class,'index']);
 Route::get('/livros', [LivrosController::class,'index']);
 Route::get('/livros/novo', [LivrosController::class,'create']);
 Route::get('/livros/editar/{id}', [LivrosController::class,'edit']);
-
+Route::post('/livros/salvar', [LivrosController::class,'store']);

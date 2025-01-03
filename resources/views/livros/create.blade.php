@@ -11,7 +11,9 @@
         <img class= "ornaments" src="{{ asset('img/ornamento.png') }}" alt="ornaments">
     </div>
     <section class="container-form">
-        <form action="#">
+        <form action="/livros/salvar" method="post" enctype="multipart/form-data">
+
+            @csrf
 
             <label for="nome">Título</label>
             <input type="text" id="titulo" name="titulo" placeholder="Digite o título do livro" required>

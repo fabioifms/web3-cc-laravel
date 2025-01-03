@@ -29,7 +29,16 @@ class LivrosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->file('imagem'));
+
+        $livro = new Livro();
+        $livro->autor = $request->autor;
+        $livro->titulo = $request->titulo;
+        $livro->descricao = $request->descricao;
+        $livro->imagem = $request->file('imagem')->store('imagens_livros','public');
+        $livro->save();
+
+        return redirect('/livros');
     }
 
     /**

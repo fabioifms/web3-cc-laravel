@@ -15,7 +15,7 @@
                 @foreach ($bibliografia as $livro)
                 <div class="container-livro">
                     <div class="container-foto">
-                        <img src="{{ $livro->imagem }}">
+                        <img src="{{ asset('storage/'.$livro->imagem) }}">
                     </div>
                     <p>{{ $livro->titulo }}</p>
                     <p>{{ $livro->descricao }}</p>
