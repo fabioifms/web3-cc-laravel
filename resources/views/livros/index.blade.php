@@ -28,8 +28,11 @@
         <td>{{ $livro->descricao }}</td>
         <td><a class="botao-editar" href="livros/editar/id={{ $livro->id }}">Editar</a></td>
         <td>
-          <form>
-            <input type="button" class="botao-excluir" value="Excluir">
+          <form action="livros/excluir" method="post">
+            @csrf 
+            @method('DELETE')
+            <input type="hidden" name="id" id="id" value="{{ $livro->id }}">
+            <input type="submit" class="botao-excluir" value="Excluir">
           </form>
         </td>        
       </tr>
