@@ -41,7 +41,7 @@
       </tbody>
     </table>
   <a class="botao-cadastrar" href="livros/novo">Cadastrar livro</a>
-  <form action="#" method="post">
+  <form action="/relatorio">
     <input type="submit" class="botao-cadastrar" value="Baixar Relatório"/>
   </form>
   </section>
