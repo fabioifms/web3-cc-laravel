@@ -26,7 +26,7 @@
         <td>{{ $livro->titulo }}</td>
         <td>{{ $livro->autor }}</td>
         <td>{{ $livro->descricao }}</td>
-        <td><a class="botao-editar" href="livros/editar/id={{ $livro->id }}">Editar</a></td>
+        <td><a class="botao-editar" href="livros/editar/{{ $livro->id }}">Editar</a></td>
         <td>
           <form action="livros/excluir" method="post">
             @csrf 

@@ -12,3 +12,4 @@ Route::get('/livros/novo', [LivrosController::class,'create']);
 Route::get('/livros/editar/{id}', [LivrosController::class,'edit']);
 Route::post('/livros/salvar', [LivrosController::class,'store']);
 Route::delete('livros/excluir', [LivrosController::class,'destroy']);
+Route::put('livros/alterar', [LivrosController::class,'update']);

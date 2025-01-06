@@ -54,15 +54,24 @@ class LivrosController extends Controller
      */
     public function edit(string $id)
     {
-        return view('livros.edit');
+        $livro = Livro::find($id);
+        return view('livros.edit',['livro' => $livro]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        $livro = Livro::find($request->id);
+        $livro->autor = $request->autor;
+        $livro->titulo = $request->titulo;
+        $livro->descricao = $request->descricao;
+        $livro->imagem = $request->file('imagem')->store('imagens_livros','public');
+        $livro->save();
+        //dd($livro);
+
+        return redirect('/livros');
     }
 
     /**
